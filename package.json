@@ -6,6 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
+    "lint": "npx eslint src/index.ts",
+    "prettier": "npx prettier -w src/index.ts --check",
     "test": "jest"
   },
   "repository": {
@@ -19,6 +21,17 @@
   },
   "homepage": "https://github.com/seungkukim/npm-ci-cd#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0"
   }
 }
