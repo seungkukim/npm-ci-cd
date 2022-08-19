@@ -1,0 +1,24 @@
+{
+  "name": "seungku",
+  "version": "1.0.0",
+  "description": "Examples for npm ci,cd with Github Actions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seungkukim/npm-ci-cd.git"
+  },
+  "author": "Seungku Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seungkukim/npm-ci-cd/issues"
+  },
+  "homepage": "https://github.com/seungkukim/npm-ci-cd#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
